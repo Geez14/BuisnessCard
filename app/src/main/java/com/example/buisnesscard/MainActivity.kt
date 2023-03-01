@@ -81,7 +81,7 @@ private fun Card_data(
             )
         }
 
-        Spacer(modifier = Modifier.size(200.dp))
+        Spacer(modifier = Modifier.size(250.dp))
 
         Box(
             modifier = Modifier
@@ -121,7 +121,7 @@ private fun Top_Row(Image: Painter, Name: String, Description: String) {
     {
         Image(
             painter = Image,
-            contentDescription = "Logo",
+            contentDescription = "Android",
             Modifier
                 .size(110.dp)
         )
@@ -132,6 +132,7 @@ private fun Top_Row(Image: Painter, Name: String, Description: String) {
             fontSize = 32.sp,
             textAlign = TextAlign.Center,
             fontFamily = FontFamily.Monospace,
+            color = Color(200, 200, 200)
         )
         Text(
             text = Description,
@@ -156,7 +157,7 @@ fun Info_Design(Icon: Painter, Info: String, Icon_Color: ColorFilter) {
     ) {
         Image(
             painter = Icon,
-            contentDescription = null,
+            contentDescription = Info,
             colorFilter = Icon_Color,
             modifier = Modifier
                 .weight(0.5f)
@@ -168,7 +169,8 @@ fun Info_Design(Icon: Painter, Info: String, Icon_Color: ColorFilter) {
             text = Info, modifier = Modifier.weight(1f),
             fontSize = 16.sp,
             fontWeight = FontWeight.W800,
-            textAlign = TextAlign.Start
+            textAlign = TextAlign.Start,
+            color = Color(200, 200, 200)
         )
     }
 }
